@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K-mart", "K-mart\K-mart.csproj", "{D1EE3F4F-C689-466C-86CB-F4FD0D43DA98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1EE3F4F-C689-466C-86CB-F4FD0D43DA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EE3F4F-C689-466C-86CB-F4FD0D43DA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EE3F4F-C689-466C-86CB-F4FD0D43DA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EE3F4F-C689-466C-86CB-F4FD0D43DA98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C9067EF-3BAB-4A63-A938-A51AF7FA4C58}
+	EndGlobalSection
+EndGlobal
