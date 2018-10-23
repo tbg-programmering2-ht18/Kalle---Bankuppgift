@@ -9,7 +9,7 @@ namespace K_mart
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Vä");
             Console.WriteLine("Vällkommen till K-mart!");
             Console.WriteLine("");
             Console.WriteLine("Ange vilket av följande alternativ önskar dugöra.");
