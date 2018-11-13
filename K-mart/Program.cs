@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace K_mart
 {
@@ -9,7 +13,7 @@ namespace K_mart
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Vä");
+
             Console.WriteLine("Vällkommen till K-mart!");
             Console.WriteLine("");
             Console.WriteLine("Ange vilket av följande alternativ önskar dugöra.");
@@ -77,6 +81,7 @@ namespace K_mart
                 try
                 {
                     Console.WriteLine("Skriv ditt val: ");
+                    Console.WriteLine("");
                     val = int.Parse(Console.ReadLine());
                 }
                 catch(FormatException)
@@ -98,6 +103,7 @@ namespace K_mart
             kundLista.Add(kund);
 
         }
+
 
 
 
