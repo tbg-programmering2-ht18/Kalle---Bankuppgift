@@ -58,7 +58,7 @@ namespace K_mart
                         {
                             if (info.namn == namn)
                             {
-                                taBortKund = info;
+                                taBortKund = info; //tarbort en spcific kund
                             }
                         }
                         kundLista.Remove(taBortKund);
