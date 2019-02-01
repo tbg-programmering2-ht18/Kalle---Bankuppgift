@@ -9,16 +9,16 @@ namespace K_mart
 {
     class Program
     {
-        static List<kund> kundLista = new List<kund>();
+        static List<Kund> kundLista = new List<Kund>();
 
         static void Main(string[] args)
         {
 
             Console.WriteLine("Vällkommen till K-mart!");
             Console.WriteLine("");
-            Console.WriteLine("Ange vilket av följande alternativ önskar dugöra.");
+            Console.WriteLine("Ange vilket av följande alternativ önskar du göra.");
             Console.WriteLine("");
-            Console.WriteLine("1. Läff till användare");
+            Console.WriteLine("1. Lägg till användare");
             Console.WriteLine("2. Ta bort användare");
             Console.WriteLine("3. Visa alla befintiliga användare");
             Console.WriteLine("4. Visa saldo för en användare");
@@ -48,23 +48,13 @@ namespace K_mart
                 switch (val)
                 {
                     case 1:
-                        laffTillKund();
+                        LaggTillKund();
                         break;
                     case 2:
-                        Console.WriteLine("namn på kunden du vill ta bort ");
-                        string namn = Console.ReadLine();
-                        kund taBortKund = null;
-                        foreach (kund info in kundLista)
-                        {
-                            if (info.namn == namn)
-                            {
-                                taBortKund = info; //tarbort en spcific kund
-                            }
-                        }
-                        kundLista.Remove(taBortKund);
+                        TaBortKund();
                         break;
                     case 3:
-                        foreach (kund info in kundLista)//skriver upp alla inskrivna object 
+                        foreach (Kund info in kundLista)//skriver upp alla inskrivna object 
                         {
                             Console.WriteLine(info.KundInfo());
                         }
@@ -94,14 +84,29 @@ namespace K_mart
 
         }
 
-        public static void laffTillKund()//lägger till användare och gör ett nytt object
+        public static void LaggTillKund()//lägger till användare och gör ett nytt object
         {
             Console.WriteLine("skriv kundens namn för att lägga till: ");
             string nyKund = Console.ReadLine();
-            kund kund = new kund();
-            kund.namn = nyKund;
-            kundLista.Add(kund);
+            Kund Kund = new Kund();
+            Kund.namn = nyKund;
+            kundLista.Add(Kund);
 
+        }
+
+        public static void TaBortKund()
+        {
+            Console.WriteLine("namn på kunden du vill ta bort ");
+            string namn = Console.ReadLine();
+            Kund taBortKund = null;
+            foreach (Kund info in kundLista)
+            {
+                if (info.namn == namn)
+                {
+                    taBortKund = info; //tarbort en spcific kund
+                }
+            }
+            kundLista.Remove(taBortKund);
         }
 
 

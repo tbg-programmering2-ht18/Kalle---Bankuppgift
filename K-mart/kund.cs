@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace K_mart
 {
 
-    class kund
+    class Kund
     {
         public string namn { get; set; }//writes the name of the customer 
         public string KundInfo()
